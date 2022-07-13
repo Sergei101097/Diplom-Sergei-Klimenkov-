@@ -7,8 +7,8 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo "========== start building image =========="
-                sh "docker build -t rodionova_test ."
-                sh "docker run rodionova_test pytest -s -v tests/test_ MY_WISHLISTS.py"
+                sh "docker build -t diplom:local ."
+                sh "docker run diplom:local pytest -s -v tests/test_ MY_WISHLISTS.py"
             }
         }
     }
