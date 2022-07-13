@@ -29,6 +29,10 @@ RUN poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi
 RUN pip install Faker
 RUN pip install webdriver_manager
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
+  && tar xzvf docker-17.04.0-ce.tgz \
+  && mv docker/docker /usr/local/bin \
+  && rm -r docker docker-17.04.0-ce.tgz
 # Copy the source code into the image.
 #COPY framework ./framework
 COPY BaseApp ./BaseApp
