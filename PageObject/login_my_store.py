@@ -12,10 +12,7 @@ class MyStoreClickLocators:
     LOCATOR_MY_STORE_CLICK_CREATE_AN_ACCOUNT = (By.ID, "SubmitCreate")
     LOCATOR_MY_STORE_EMAIL_INVALID = (By.XPATH, "//*[@id='create_account_error']/ol/li")
     LOCATOR_MY_STORE_EMAIL_ADDRESS = (By.ID, "email_create")
-    LOCATOR_MY_STORE_YOUR_PERSONAL_INFORMATION = (
-        By.CSS_SELECTOR,
-        "#account-creation_form > div:nth-child(1) > h3",
-    )
+    LOCATOR_MY_STORE_YOUR_PERSONAL_INFORMATION = (By.CSS_SELECTOR,"#account-creation_form > div:nth-child(1) > h3")
     LOCATOR_MY_STORE_AUTHENTICATION = (By.CLASS_NAME, "page-heading")
     """YOUR PERSONAL INFORMATION"""
     LOCATOR_MY_STORE_Title = (By.CSS_SELECTOR, "#id_gender1")
