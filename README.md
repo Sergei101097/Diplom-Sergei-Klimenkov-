@@ -33,4 +33,4 @@ docker build -t diplom_sergei_klimenkov:local .
 Launching the created docker image
 
 
-docker run diplom_sergei_klimenkov:local /bin/bash -c "poetry run python -m pytest"
+docker run diplom_sergei_klimenkov:local /bin/bash -c --reruns 5 "poetry run python -m pytest"
