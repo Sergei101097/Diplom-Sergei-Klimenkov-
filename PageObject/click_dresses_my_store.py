@@ -8,7 +8,7 @@ class MyStoreClickLocators:
 
 
 class Clichome(BasePage):
-    def click_DRESSES(self):
+    def click_dresses(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK, time=50).click()
 
     def name_stranici(self):

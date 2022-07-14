@@ -20,20 +20,20 @@ class Clichome(BasePage):
     def click_enter(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_ENTER, time=50).click()
 
-    def Email_address(self, wood):
+    def email_address(self, wood):
         Email_address = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_Email_address, time=50)
         Email_address.send_keys(wood)
 
-    def Password(self, wood):
+    def password(self, wood):
         Password = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_Password, time=50)
         Password.send_keys(wood)
 
-    def Sign_in(self):
+    def sign_in(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_Sign_in, time=50).click()
 
-    def HISTORY_AND_DETAILS(self):
+    def histoty_and_details(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_ORDER_HISTORY_AND_DETAILS, time=50).click()
 
-    def ORDER_HISTORY(self):
+    def order_history(self):
         ORDER_HISTORY = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_ORDER_HISTORY, time=50).text
         return ORDER_HISTORY

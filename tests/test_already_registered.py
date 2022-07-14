@@ -2,7 +2,7 @@ import time
 
 import pytest
 
-from PageObject.ALREADY_REGISTERED import Clichome
+from PageObject.already_registered import Clichome
 
 
 @pytest.mark.usefixture("browser")
@@ -12,11 +12,11 @@ def test_ALREADY_REGISTERED(browser):
     time.sleep(2)
     ALREADY_REGISTERED.click_enter()
     time.sleep(2)
-    ALREADY_REGISTERED.Email_address("klimenkovser@gmail.com")
+    ALREADY_REGISTERED.email_address("klimenkovser@gmail.com")
     time.sleep(2)
-    ALREADY_REGISTERED.Password("123456")
+    ALREADY_REGISTERED.password("123456")
     time.sleep(2)
-    ALREADY_REGISTERED.Sign_in()
+    ALREADY_REGISTERED.sign_in()
     time.sleep(5)
-    ALREADY_REGISTERED.ACCOUNT()
-    assert ALREADY_REGISTERED.ACCOUNT() == "MY ACCOUNT"
+    ALREADY_REGISTERED.account()
+    assert ALREADY_REGISTERED.account() == "MY ACCOUNT"

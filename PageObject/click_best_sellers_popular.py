@@ -9,8 +9,8 @@ class MyStoreClickLocators:
 
 
 class Clichome(BasePage):
-    def click_POPULAR(self):
+    def click_popular(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_POPULAR_MY_STORE_CLICK, time=50).click()
 
-    def click_BEST_SELLERS(self):
+    def click_best_sellers(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_BEST_SELLERS_MY_STORE_CLICK, time=50).click()

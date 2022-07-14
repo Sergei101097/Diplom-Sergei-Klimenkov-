@@ -50,7 +50,7 @@ class Clichome(BasePage):
     def click_create_an_account(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_CREATE_AN_ACCOUNT, time=20).click()
 
-    def Invalid_email_address(self):
+    def invalid_email_address(self):
         inval = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_EMAIL_INVALID, time=20).text
         return inval
 
@@ -74,23 +74,23 @@ class Clichome(BasePage):
         return authentication
 
     # YOUR PERSONAL INFORMATION
-    def Title(self):
+    def title(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Title, time=20).click()
 
-    def First_name(self):
+    def first_name(self):
         faker = Faker()
         name = faker.last_name()
         First_name = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_First_name, time=20)
         First_name.send_keys(name)
 
-    def Last_name(self):
+    def last_name(self):
         faker = Faker()
         surname = faker.first_name()
         Last_name = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Last_name, time=20)
         Last_name.click()
         Last_name.send_keys(surname)
 
-    def Email(self):
+    def email(self):
         Email = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Email, time=20)
         Email.click()
 
@@ -128,82 +128,82 @@ class Clichome(BasePage):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_our_news, time=20).click()
 
     # YOUR ADDRESS
-    def First_name_1(self):
+    def first_name_1(self):
         First_name_1 = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_First_name_1, time=20)
         First_name_1.click()
 
-    def Last_name_1(self):
+    def last_name_1(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Last_name_1, time=20).click()
 
-    def Company(self, word):
+    def company(self, word):
         Company = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Company, time=20)
         Company.send_keys(word)
 
-    def Address(self, word):
+    def address(self, word):
         Address = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Address, time=20)
         Address.send_keys(word)
 
-    def Address_1(self, word):
+    def address_1(self, word):
         Address = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Address_1, time=20)
         Address.send_keys(word)
 
-    def City(self):
+    def city(self):
         faker = Faker()
         cit = faker.city()
         City = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_City, time=20)
         City.send_keys(cit)
 
-    def State(self, word):
+    def state(self, word):
         State = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_State, time=20)
         State.click()
         State.send_keys(word)
         State.click()
 
-    def Zip_Postal_Code(self):
+    def zip_postal_code(self):
         faker = Faker()
         zip_cod = faker.zipcode()
         Zip_Postal_Code = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Zip_Postal_Code, time=20)
         Zip_Postal_Code.send_keys(zip_cod)
 
-    def Country(self, word):
+    def country(self, word):
         Country = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Country, time=20)
         Country.click()
         Country.send_keys(word)
         Country.click()
 
-    def Additional_information(self, word):
+    def additional_information(self, word):
         Additional_information = self.find_element(
             MyStoreClickLocators.LOCATOR_MY_STORE_Additional_information, time=20
         )
         Additional_information.send_keys(word)
 
-    def Home_phone(self):
+    def home_phone(self):
         faker = Faker()
         hom_phone = faker.phone_number()
         Home_phone = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Home_phone, time=20)
         Home_phone.send_keys(hom_phone)
 
-    def Mobile_phone(self):
+    def mobile_phone(self):
         faker = Faker()
         mob_phone = faker.phone_number()
         Mobile_phone = self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Mobile_phone, time=20)
         Mobile_phone.send_keys(mob_phone)
 
-    def Assign_an_address_alias_for_future_reference(self, word):
-        Assign_an_address_alias_for_future_reference = self.find_element(
+    def assign_an_address_alias_for_future_reference(self, word):
+        assign_an_address_alias_for_future_reference = self.find_element(
             MyStoreClickLocators.LOCATOR_MY_STORE_Assign_an_address_alias_for_future_reference, time=20
         )
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
-        Assign_an_address_alias_for_future_reference.send_keys(word)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(Keys.BACKSPACE)
+        assign_an_address_alias_for_future_reference.send_keys(word)
 
     def click_register(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_Register, time=20).click()

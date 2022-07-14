@@ -1,6 +1,6 @@
 import pytest
 
-from PageObject.click_BEST_SELLERS_POPULAR import Clichome
+from PageObject.click_best_sellers_popular import Clichome
 
 
 @pytest.mark.usefixture("browser")
