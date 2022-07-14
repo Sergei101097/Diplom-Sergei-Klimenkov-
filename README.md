@@ -28,9 +28,9 @@ pip install requests
 Creating a docker image
 
 
-docker build -t diplom_sergei_klimenkov:local .
+docker build -t <name> .
 
 Launching the created docker image
 
 
-docker run diplom_sergei_klimenkov:local /bin/bash -c --reruns 5 "poetry run python -m pytest"
+docker run <name> /bin/bash -c "poetry run python -m pytest"
