@@ -1,39 +1,27 @@
 
-For Jenkins 
+For Jenkins:
 
 
-Copy the repository link
+1)Copy the repository link
 
+2)Go to Jenkins
 
-Go to Jenkins
+3)Сlick build item 
 
+4)Choosing the Pipeline
 
-Сlick build item 
+5)Setting the name
 
+6)Go to the bottom of the page, click "Definition" and select "Pipeline script from SCM"
 
-Choosing the Pipeline
+7)Click "SCM",choose "Git",in the repository URL, insert a link to the repositories.
 
+8)In Credentials, we use none
 
-Setting the name
+9)In Branch Specifier (blank for 'any'), use */main
 
+10)We leave the Script Path unchanged
 
-Go to the bottom of the page, click "Definition" and select "Pipeline script from SCM"
+11)Click save
 
-
-
-Click "SCM",choose "Git",in the repository URL, insert a link to the repositories.
-
-
-
-In Credentials, we use none
-
-
-In Branch Specifier (blank for 'any'), use */main
-
-
-We leave the Script Path unchanged
-
-Click save
-
-
-After switching to another page, click Collect Now
+12)After switching to another page, click Collect Now
