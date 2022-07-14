@@ -27,8 +27,10 @@ pip install requests
 
 Creating a docker image:
 
+"NAME"-Setting any name for docker
 
 docker build -t "NAME" .
+
 
 Launching the created docker image:
 
