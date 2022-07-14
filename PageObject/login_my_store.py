@@ -1,5 +1,7 @@
 from faker import Faker
+
 from selenium.webdriver.common.by import By
+
 from selenium.webdriver.common.keys import Keys
 
 from BaseApp.BasePage import BasePage

@@ -5,7 +5,7 @@ import pytest
 from PageObject.click_women_my_store import Clichome
 
 
-#@pytest.mark.usefixture("browser")
+@pytest.mark.usefixture("browser")
 def test_click_Women_my_store(browser):
     my_store_page = Clichome(browser)
     my_store_page.go_to_site()
