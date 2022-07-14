@@ -11,8 +11,7 @@ Mac OS
 
 ####
 WSL setup on Windows
-```
-Installation process https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+```Installation process https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
 X-server setup to run tests in browser GUI https://gist.github.com/KirillY/bc4253edfd62b27c452d01595d19efce After x-server is set, you might also need to enable AUT_IS_INSIDE_WSL environment variable or similar to set DISPLAY
 
 
