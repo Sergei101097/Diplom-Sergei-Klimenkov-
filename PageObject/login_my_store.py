@@ -41,7 +41,7 @@ class MyStoreClickLocators:
     LOCATOR_MY_STORE_Register = (By.CSS_SELECTOR, "#submitAccount")
 
 
-class clichome(BasePage):
+class Clichome(BasePage):
 
     # Invalid_email_address
     def click_enter(self):

@@ -8,7 +8,7 @@ class MyStoreClickLocators:
     LOCATOR_POPULAR_MY_STORE_CLICK = (By.XPATH, "//*[@id='home-page-tabs']/li[1]/a")
 
 
-class clichome(BasePage):
+class Clichome(BasePage):
     def click_POPULAR(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_POPULAR_MY_STORE_CLICK, time=50).click()
 

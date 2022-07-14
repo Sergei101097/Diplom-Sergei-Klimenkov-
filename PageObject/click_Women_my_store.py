@@ -8,7 +8,7 @@ class MyStoreClickLocators:
     LOCATOR_MY_STORE_CLASS_NAME = (By.CLASS_NAME, "category-name")
 
 
-class clichome(BasePage):
+class Clichome(BasePage):
     def click_Women(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK, time=10).click()
 

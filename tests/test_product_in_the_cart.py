@@ -2,12 +2,12 @@ import time
 
 import pytest
 
-from PageObject.product_in_the_cart import clichome
+from PageObject.product_in_the_cart import Clichome
 
 
 @pytest.mark.usefixture("browser")
 def test_product_in_the_cart(browser):
-    my_store_page = clichome(browser)
+    my_store_page = Clichome(browser)
     my_store_page.go_to_site()
     time.sleep(2)
     my_store_page.women_tab()

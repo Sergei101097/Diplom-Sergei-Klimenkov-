@@ -15,7 +15,7 @@ class MyStoreClickLocators:
     LOCATOR_MY_STORE_YOUR_CART_EMPTY = (By.CSS_SELECTOR, "#center_column > p")
 
 
-class clichome(BasePage):
+class Clichome(BasePage):
     def click_enter(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_ENTER, time=20).click()
 

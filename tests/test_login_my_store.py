@@ -2,12 +2,12 @@ import time
 
 import pytest
 
-from PageObject.login_my_store import clichome
+from PageObject.login_my_store import Clichome
 
 
 @pytest.mark.usefixture("browser")
 def test_login_to_the_authentication_page(browser):
-    authentication = clichome(browser)
+    authentication = Clichome(browser)
     authentication.go_to_site()
     time.sleep(5)
     authentication.click_enter()
@@ -19,7 +19,7 @@ def test_login_to_the_authentication_page(browser):
 # Invalid email address
 @pytest.mark.usefixture("browser")
 def test_enter_my_store_Invalid_email_address(browser):
-    my_store_page = clichome(browser)
+    my_store_page = Clichome(browser)
     my_store_page.go_to_site()
     time.sleep(5)
     my_store_page.click_enter()
@@ -34,7 +34,7 @@ def test_enter_my_store_Invalid_email_address(browser):
 # YOUR PERSONAL INFORMATION
 @pytest.mark.usefixture("browser")
 def test_enter_my_store(browser):
-    enter_my_store = clichome(browser)
+    enter_my_store = Clichome(browser)
     enter_my_store.go_to_site()
     time.sleep(5)
     enter_my_store.click_enter()
@@ -51,7 +51,7 @@ def test_enter_my_store(browser):
 # YOUR PERSONAL INFORMATION
 @pytest.mark.usefixture("browser")
 def test_your_personal_information(browser):
-    your_personal_information = clichome(browser)
+    your_personal_information = Clichome(browser)
     your_personal_information.go_to_site()
     time.sleep(1)
     your_personal_information.click_enter()

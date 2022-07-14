@@ -2,12 +2,12 @@ import time
 
 import pytest
 
-from PageObject.my_accaunt import clichome
+from PageObject.my_accaunt import Clichome
 
 
 @pytest.mark.usefixture("browser")
 def test_my_accaunt(browser):
-    my_store_page = clichome(browser)
+    my_store_page = Clichome(browser)
     time.sleep(5)
     my_store_page.go_to_site()
     time.sleep(2)

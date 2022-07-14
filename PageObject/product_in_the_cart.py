@@ -10,7 +10,7 @@ class MyStoreClickLocators:
     LOCATOR_DRESS_IN_CART = (By.XPATH, "//*[@id='layer_cart']/div[1]/div[1]/h2")
 
 
-class clichome(BasePage):
+class Clichome(BasePage):
     def women_tab(self):
         search_women_tab = self.find_element(MyStoreClickLocators.LOCATOR_WOMEN_TAB, time=50)
         search_women_tab.click()

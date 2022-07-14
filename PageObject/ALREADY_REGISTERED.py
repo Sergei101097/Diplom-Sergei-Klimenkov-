@@ -11,7 +11,7 @@ class MyStoreClickLocators:
     LOCATOR_MY_STORE_CLICK_MY_ACCOUNT = (By.CSS_SELECTOR, "#center_column > h1")
 
 
-class clichome(BasePage):
+class Clichome(BasePage):
     def click_enter(self):
         return self.find_element(MyStoreClickLocators.LOCATOR_MY_STORE_CLICK_ENTER, time=50).click()
 
